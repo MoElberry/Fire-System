@@ -17,29 +17,29 @@ Video Demo: The video demo of the project
 
 read temp sensor reading..
 1:
-if temp < 40:
+if temp < 100:
 	print fine
-	no led oppened
+	green led oppened
 	the motor is not turned on
 
-if temp > 40 && smoke < 50:
+if temp > 100 && smoke < 90:
 	print Heat
 	Yellow led oppened
 	Turn the smoke sensor on
 	the motor is not turned on
 	
-	check if the temp goes under 40 again
+	check if the temp goes under 100 again
 		if yes
 			go to 1;
 
 
 
-if temp > 50
+if temp > 100 && smoke>90:
 	print Fire
 	turn buzzer on
 	red led oppened
 	Turn the smoke sensor on
-	the motor is not turned on
+	the motor is  turned on
 	
 	check the button to stop the fire system\
 	if the user hits the button and enters the password right:
